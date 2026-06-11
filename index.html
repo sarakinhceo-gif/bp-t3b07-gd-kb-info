@@ -1,213 +1,731 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>애니 매니아 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #fdfdfa;
-      --charcoal-fg: #1c1a17;
-      --gold-accent: #c29d6d;
-      --hairline-color: #e6e3db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
-    }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.5rem;
-      font-weight: 700;
-      line-height: 1.35;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>공덕 노래방 정보 - 분위기 좋은 노래방 추천 | 공덕노래방</title>
+<meta name="description" content="공덕에서 노래방 찾는 사람들을 위한 진짜 후기 모음. 가성비 좋은 코인노래방부터 감성적인 단독룸까지, 공덕 노래방 정보를 브로처럼 알려드립니다. 전화 010-6279-0862">
+<meta name="keywords" content="공덕 노래방, 공덕 노래방 추천, 공덕 노래방 가격, 공덕 코인노래방, 공덕 혼자 노래방, 마포 노래방, 공덕역 노래방">
+<meta name="bpaas-design-system" content="organic-stripe">
+<meta name="bpaas-design-theme" content="kr-organic-stripe">
+<link rel="canonical" href="https://t3b07-gd-kb-info.vercel.app/">
+
+<meta property="og:title" content="공덕 노래방 정보 - 분위기 좋은 노래방 추천">
+<meta property="og:description" content="공덕에서 노래방 찾는 사람들을 위한 진짜 후기 모음. 가성비 좋은 코인노래방부터 감성적인 단독룸까지, 공덕 노래방 정보를 브로처럼 알려드립니다.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://t3b07-gd-kb-info.vercel.app/">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="공덕 노래방 정보 - 분위기 좋은 노래방 추천">
+<meta name="twitter:description" content="공덕에서 노래방 찾는 사람들을 위한 진짜 후기 모음. 가성비 좋은 코인노래방부터 감성적인 단독룸까지, 공덕 노래방 정보를 브로처럼 알려드립니다.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "공덕 노래방 정보",
+  "description": "공덕 지역 노래방 정보와 실제 이용자 후기 모음",
+  "url": "https://t3b07-gd-kb-info.vercel.app/",
+  "telephone": "010-6279-0862",
+  "areaServed": {
+    "@type": "City",
+    "name": "서울특별시 마포구 공덕동"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "서울",
+    "addressRegion": "마포구",
+    "addressCountry": "KR"
+  }
+}
+</script>
+
+<style>
+/* ===== CSS DNA: Swiss Minimal ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif;
+  color: #2e2522;
+  background: #fcf8f2;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== Typography ===== */
+h1, h2, h3, h4 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #2e2522;
+  padding-bottom: 8px;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+p {
+  margin-bottom: 12px;
+  color: #2e2522;
+}
+
+a {
+  color: #7f5539;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+/* ===== Navigation ===== */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fcf8f2;
+  border-bottom: 2px solid #2e2522;
+}
+
+.nav-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #2e2522;
+  letter-spacing: -0.03em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2e2522;
+  padding: 4px 0;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.nav-links a:hover {
+  border-bottom-color: #7f5539;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+
+.hamburger span {
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: #2e2522;
+  transition: 0.3s;
+}
+
+.mobile-menu {
+  display: none;
+  background: #fcf8f2;
+  border-top: 1px solid #2e2522;
+  padding: 16px 24px;
+}
+
+.mobile-menu a {
+  display: block;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2e2522;
+  border-bottom: 1px solid #e8e0d6;
+}
+
+.mobile-menu a:last-child {
+  border-bottom: none;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  padding: 60px 0 48px;
+  border-bottom: 2px solid #2e2522;
+  background: #fcf8f2;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.hero-visual {
+  aspect-ratio: 4 / 3;
+  background: #2e2522;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  border: 2px solid #7f5539;
+}
+
+.hero h1 span {
+  color: #7f5539;
+}
+
+.hero-sub {
+  font-size: 1.15rem;
+  color: #5a4a42;
+  margin-bottom: 20px;
+}
+
+.cta-phone {
+  display: inline-block;
+  background: #2e2522;
+  color: #fcf8f2;
+  padding: 12px 32px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: 2px solid #2e2522;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cta-phone:hover {
+  background: #fcf8f2;
+  color: #2e2522;
+  opacity: 1;
+}
+
+/* ===== Sections ===== */
+.section {
+  padding: 40px 0;
+  border-bottom: 1px solid #e0d8ce;
+}
+
+.section:last-of-type {
+  border-bottom: 2px solid #2e2522;
+}
+
+/* ===== Card Grid ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.card {
+  border: 2px solid #2e2522;
+  padding: 20px;
+  background: #fcf8f2;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 0 #7f5539;
+}
+
+.card-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #5a4a42;
+}
+
+/* ===== Review Cards ===== */
+.review-card {
+  border: 2px solid #2e2522;
+  padding: 20px;
+  background: #fcf8f2;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.review-nick {
+  font-weight: 600;
+  color: #7f5539;
+}
+
+.review-date {
+  color: #8a7a72;
+  font-size: 0.85rem;
+}
+
+.stars {
+  color: #7f5539;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ===== Info Stripes ===== */
+.info-stripe {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+.stripe-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 16px;
+  border: 1px solid #2e2522;
+}
+
+.stripe-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* ===== Footer ===== */
+footer {
+  padding: 32px 0 24px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #5a4a42;
+}
+
+footer a {
+  color: #7f5539;
+  font-weight: 500;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .mobile-menu.open {
+    display: block;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-visual {
+    aspect-ratio: 16 / 9;
+    font-size: 3.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .info-stripe {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 32px 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
 </head>
 <body>
+
+<!-- Navigation -->
+<nav class="sticky-nav" role="navigation">
+  <div class="nav-inner">
+    <div class="logo">🎤 공덕노래방</div>
+    <ul class="nav-links">
+      <li><a href="#info">정보</a></li>
+      <li><a href="#reviews">후기</a></li>
+      <li><a href="#tip">꿀팁</a></li>
+      <li><a href="tel:010-6279-0862">📞 전화</a></li>
+    </ul>
+    <button class="hamburger" id="hamburgerBtn" aria-label="메뉴 열기">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#info">정보</a>
+    <a href="#reviews">후기</a>
+    <a href="#tip">꿀팁</a>
+    <a href="tel:010-6279-0862">📞 전화 010-6279-0862</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>공덕에서 <span>노래방</span> 찾는다면?<br>여기 다 모였어</h1>
+      <p class="hero-sub">가성비 코인노래방부터 감성 터지는 단독룸까지. 공덕 노래방 찐 후기만 모아봤어. 브로들이 인정한 곳만 골랐다니까?</p>
+      <a href="tel:010-6279-0862" class="cta-phone">📞 전화 문의 010-6279-0862</a>
+    </div>
+    <div class="hero-visual">
+      🎤🎶
+    </div>
+  </div>
+</section>
+
+<!-- Main -->
+<main>
+
+<!-- Section: 기본 정보 -->
+<section class="section" id="info">
   <div class="container">
-    <header>
-      <a href="/" class="brand">EDITORIAL.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="kicker">BOUTIQUE KR / SELECTION ACCENT</div>
-      <h1>애니 매니아 지식 저널 및 아카이브</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>애니 매니아</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Editorial Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h3>
-          <p>90년대 셀 애니메이션 제작 시 빛이 뿌옇게 흐려지거나 번지는 몽환적인 효과를 내기 위해 투명 셀판 아래에 부드러운 백라이트를 대고 조리개를 조절해 이중 노출로 촬영하던 촬영 스튜...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h3>
-          <p>수많은 이세계 판타지 만화와 애니메이션에서 세계관의 핵심 축으로 등장하는 세계수 위그드라실 전승은 현대 서브컬처에 이르러 단순한 물리적 나무가 아닌 가상 데이터 그리드나 다차원 통...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h3>
-          <p>디즈니의 풀 애니메이션(초당 24장)에 대비되는 동양 리미티드 애니메이션의 정수인 3코마 작화법(초당 8장 기법)은 프레임의 부족함을 독창적인 프레임 홀드 타이밍과 과장된 정지 컷...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>애니 작화 마니아들이 강력히 추천하는 강남 셔츠룸 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>애니 작화 마니아들이 강력히 추천하는 강남 셔츠룸 스페셜 아카이브</h3>
-          <p>깊이 있는 셀 애니메이션 작화의 연출 철학과 세계수의 역사적 서사 설정을 분석하며 지적인 마니아적 안목을 키워가다 보면, 지친 정신에 활기를 불어넣고 쾌적한 오프라인 라이프 쉼터를...</p>
-        </a>
-      
+    <h2>📍 공덕 노래방 기본 정보</h2>
+    <p>공덕역 주변에 노래방이 꽤 많다는 거 알고 있었어? 근데 막상 가려면 어딜 가야 할지 고민되잖아. 내가 직접 돌아다니면서 겪은 공덕 노래방 정보를 싹 정리해봤어. 가격, 분위기, 음질까지 다 따져봤다구!</p>
+    
+    <div class="info-stripe">
+      <div class="stripe-item">
+        <div class="stripe-icon">⏰</div>
+        <div>
+          <strong>이용 시간</strong><br>
+          보통 오후 1시~익일 6시, 주말은 24시 운영하는 곳도 있어. 코인노래방은 24시간!
         </div>
       </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+      <div class="stripe-item">
+        <div class="stripe-icon">💰</div>
+        <div>
+          <strong>가격대</strong><br>
+          코인노래방 500원~1,000원/곡. 일반 노래방 1시간에 10,000원~20,000원 선이야.
+        </div>
       </div>
-    </footer>
+      <div class="stripe-item">
+        <div class="stripe-icon">🎵</div>
+        <div>
+          <strong>음질/기기</strong><br>
+          TJ미디어 vs 금영. 공덕은 TJ가 좀 더 많고, 최근에 리뉴얼한 곳은 음질이 진짜 좋아.
+        </div>
+      </div>
+      <div class="stripe-item">
+        <div class="stripe-icon">📍</div>
+        <div>
+          <strong>위치</strong><br>
+          공덕역 4번 출구 쪽에 밀집. 롯데시네마 골목 쪽에도 꽤 있어.
+        </div>
+      </div>
+    </div>
   </div>
+</section>
+
+<!-- Section: 추천 노래방 -->
+<section class="section">
+  <div class="container">
+    <h2>🔥 공덕 노래방 추천 TOP 3</h2>
+    <div class="card-grid">
+      <div class="card">
+        <span class="card-icon">🎤</span>
+        <h3>코인노래방 24시</h3>
+        <p>공덕역 3번 출구 바로 앞. 500원에 한 곡! 혼자 가기 좋고, 기계도 새로 바꿨어. 가성비 끝판왕.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🎶</span>
+        <h3>루키노래방</h3>
+        <p>단독룸 완전 넓고, 조명도 감성적이야. 2시간 25,000원. 친구들이랑 가면 진짜 재밌어.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🌟</span>
+        <h3>더스테이지 공덕</h3>
+        <p>음향이 진짜 프로급. 마이크도 고급형이고. 가격은 좀 있지만 퀄리티는 최고. 데이트 코스로 강추.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section: 찐 후기 (UGC) -->
+<section class="section" id="reviews">
+  <div class="container">
+    <h2>💬 공덕 노래방 찐 후기</h2>
+    <p>내가 직접 가보고, 주변 브로들한테 물어본 후기야. 거짓말 안 보태고 진짜야.</p>
+    
+    <div class="card-grid" style="margin-top: 16px;">
+      <div class="review-card">
+        <div class="review-header">
+          <span class="review-nick">공덕맨</span>
+          <span class="review-date">2025.02.10</span>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"코인노래방 24시 진짜 좋아. 1,000원이면 2곡 부르고도 거스름돈 남아. 혼자 스트레스 풀기 딱이야."</p>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <span class="review-nick">노래방러버</span>
+          <span class="review-date">2025.02.08</span>
+        </div>
+        <div class="stars">★★★★☆</div>
+        <p class="review-text">"루키노래방 분위기 미쳤어. 조명이랑 인테리어가 감성 터져서 사진 찍기도 좋음. 근데 주말엔 웨이팅 있어."</p>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <span class="review-nick">혼코노마스터</span>
+          <span class="review-date">2025.02.05</span>
+        </div>
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"더스테이지 공덕은 음질이 진짜 다른 차원이야. 마이크도 좋고 스피커도 깔끔. 돈값 제대로 함."</p>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <span class="review-nick">마포브로</span>
+          <span class="review-date">2025.01.28</span>
+        </div>
+        <div class="stars">★★★★☆</div>
+        <p class="review-text">"공덕역 4번 출구 쪽 노래방 골목? 거기 중간쯤에 있는 곳 가봤는데 가성비 좋더라. 1시간에 만원."</p>
+      </div>
+      
+      <div class="review-card">
+        <div class="review-header">
+          <span class="review-nick">금영파</span>
+          <span class="review-date">2025.01.20</span>
+        </div>
+        <div class="stars">★★★☆☆</div>
+        <p class="review-text">"TJ만 있는 곳도 있는데 나는 금영파라서 아쉬웠어. 그래도 시설은 깔끔하고 좋았음."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section: 꿀팁 -->
+<section class="section" id="tip">
+  <div class="container">
+    <h2>🎯 공덕 노래방 꿀팁 대방출</h2>
+    <div class="card-grid-2">
+      <div class="card">
+        <span class="card-icon">⏱️</span>
+        <h3>시간대 공략</h3>
+        <p>오후 2시~5시 사이가 가장 싸. 이른 저녁 시간엔 할인 이벤트 하는 곳도 많으니까 전화해보고 가.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">👥</span>
+        <h3>인원별 추천</h3>
+        <p>2~3명이면 코인노래방, 4명 이상이면 일반 노래방이 나아. 단독룸 있는 곳은 6명까지도 괜찮아.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🎧</span>
+        <h3>음질 체크 꿀팁</h3>
+        <p>들어가자마자 마이크 두드려보고 울림 확인해. 울림 심하면 음질 안 좋은 거야. 그리고 리모컨 상태도 꼭 보셈.</p>
+      </div>
+      <div class="card">
+        <span class="card-icon">🍕</span>
+        <h3>음식 반입</h3>
+        <p>대부분 음식 반입 안 돼. 근데 코인노래방은 눈치 안 보고 먹을 수 있어. 떡볶이 사들고 가면 개꿀.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+
+
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⚖️ COMPARE</span>
+          <time datetime="2026-06-11">2026-06-11</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">공덕 노래방 정보 vs 공덕 노래방 정보 비교 — 어디가 더 좋을까? 비교 분석</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">제목: 창작한 제목: "블레이드 러너의 유니콘 꿈 시퀀스 삽입, 스콧 감독의 진실 찾기" ## 포스트 메타정보포스트 기획 테마: 공덕 노래방 정보 vs 공덕 노래방 정보 비교 — 어디가 더 좋을까? 비교 분석 백링크 지시: 본문 내러티브 속에서 다음 링크를 자연스러운 </p>
+      </div>
+      <a href="posts/compare-002-1ubazn1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 강남 셔츠룸 스페셜 아카이브</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">애니 작화 마니아들이 강력히 추천하는 강남 셔츠룸 스페셜 아카이브</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/juice-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">90년대 셀 애니메이션 작화의 한계와 이와 관련된 아날로그 특수 효과의 역사</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">판타지 애니 설정 속 북유럽 세계수(Yggdrasil) 전승의 변형 패턴 고찰</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-2.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-05-24">2026-05-24</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">전설적인 애니메이터들의 타이밍 미학: 리미티드 3코마 작화법의 운동학</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis"></p>
+      </div>
+      <a href="posts/normal-3.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>⭐ REVIEW</span>
+          <time datetime="2026-06-11">2026-06-11</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">공덕 노래방 정보 처음 알아볼 때 실제로 많이 묻는 질문 5가지</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 포스트 DNA 1bd07a49 **제목: 창작한 제목:** **"데모 버전의 미공개 지역과 적 배치 변화: 현장 실패 사례를 통해 느껴본 데미지" 관점: 실패 사례를 복기해 재발 방지 원칙을 도출구조: comparative-journey — 동일 목표를 두 경로</p>
+      </div>
+      <a href="posts/qa-001-1ubazn1.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="container">
+    <p>🎤 공덕 노래방 정보 - 찐 후기로 골라주는 노래방 가이드</p>
+    <p>문의: <a href="tel:010-6279-0862">010-6279-0862</a> | <a href="https://t3b07-gd-kb-info.vercel.app/">t3b07-gd-kb-info.vercel.app</a></p>
+    <p style="margin-top: 16px; font-size: 0.85rem;">&copy; 2025 공덕노래방정보. All rights reserved. 이 사이트는 실제 노래방 업체와 무관한 정보 제공 사이트입니다.</p>
+  </div>
+</footer>
+
+<script>
+// Hamburger menu toggle
+const hamburger = document.getElementById('hamburgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('open');
+});
+
+// Close mobile menu on link click
+mobileMenu.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('open');
+  });
+});
+</script>
+
 </body>
 </html>
